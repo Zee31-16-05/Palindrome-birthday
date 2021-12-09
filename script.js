@@ -128,7 +128,6 @@ function checkNextPalindromeDate(date) {
 
 }
 
-
 function getPreviousDate(date) {
     var day = date.day - 1;
     var month = date.month;
@@ -243,5 +242,6 @@ function checkHandler() {
 
 
 
-checkBtn.addEventListener('click', checkHandler)
+checkBtn.addEven
+tListener('click', checkHandler)
 
