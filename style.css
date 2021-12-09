@@ -56,3 +56,52 @@ p {
     font-size: x-large;
     font-weight: bolder;
 }
+
+.footer-line {
+    text-align: center;
+    color: var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+img {
+    max-width: 80%;
+    height: 12rem;
+    width: 20rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer .social-pills {
+    text-align: center;
+}
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+hr {
+    border: 1px solid var(--primary-color);
+}
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: x-large;
+}
+.list-non-bullet {
+
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+.footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
