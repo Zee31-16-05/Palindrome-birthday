@@ -242,6 +242,6 @@ function checkHandler() {
 
 
 
-checkBtn.addEven
-tListener('click', checkHandler)
+checkBtn.addEventLi
+stener('click', checkHandler)
 
