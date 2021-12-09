@@ -34,3 +34,38 @@ function getDateAsString(date) {
 
     return dateStr
 }
+
+function getDateInAllFormats(date) {
+
+    var ddmmyyyy = date.day + date.month + date.year;
+    var mmddyyyy = date.month + date.day + date.year;
+    var yyyymmdd = date.year + date.month + date.day;
+    var ddmmyy = date.day + date.month + date.year.slice(-2);
+    var mmddyy = date.month + date.day + date.year.slice(-2);
+    var yymmdd = date.year.slice(-2) + date.month + date.day;
+
+    return [ddmmyyyy, mmddyyyy, yyyymmdd, ddmmyy, mmddyy, yymmdd]
+}
+
+function checkPalindromeForAllFormats(date) {
+    var listOfDateFormat = getDateInAllFormats(date);
+    var palindromeList = [];
+    for (var i = 0; i < listOfDateFormat.length; i++) {
+        var result = isPalindrome(listOfDateFormat[i])
+        palindromeList.push(result);
+    }
+    return palindromeList;
+}
+
+function leapYear(year) {
+    if (year % 400 === 0)
+        return true;
+
+    if (year % 100 === 0)
+        return false;
+
+    if (year % 4 === 0)
+        return true;
+
+    return false;
+}
